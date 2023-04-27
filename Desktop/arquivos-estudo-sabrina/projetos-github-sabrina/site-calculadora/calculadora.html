@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icone.png">
+
+	<title>Calculadora</title>
+
+</head>
+<body class="imagem">
+    
+    <h1>Calculadora</h1>
+    
+	<div class="calculator">
+		<div class="calculator-screen" id="calculator-screen"></div>
+		<button onclick="addToScreen('7'); playSound()">7</button>
+		<button onclick="addToScreen('8'); playSound()">8</button>
+		<button onclick="addToScreen('9'); playSound()">9</button>
+		<button class="operator" onclick="operatorClicked('/'); playSound()">/</button>
+		<button onclick="addToScreen('4'); playSound()">4</button>
+		<button onclick="addToScreen('5'); playSound()">5</button>
+		<button onclick="addToScreen('6'); playSound()">6</button>
+		<button class="operator" onclick="operatorClicked('*'); playSound()">*</button>
+		<button onclick="addToScreen('1'); playSound()">1</button>
+		<button onclick="addToScreen('2'); playSound()">2</button>
+		<button onclick="addToScreen('3'); playSound()">3</button>
+		<button class="operator" onclick="operatorClicked('-'); playSound()">-</button>
+        <button class="ac" onclick="clearScreen(); playSound()">AC</button>
+		<button onclick="addToScreen('0'); playSound()">0</button>
+        <button class="equal" onclick="calculate(); playSound()">=</button>
+		<button class="operator" onclick="operatorClicked('+'); playSound()">+</button>
+	</div>
+
+	<audio id="button-sound">
+		<source src="sounds/button.mp3" type="audio/mpeg">
+	</audio>
+
+	<script src="js/calculadora.js"></script>
+</body>
+</html>

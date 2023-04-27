@@ -1,0 +1,68 @@
+body {
+    font-family: 'Lobster', cursive;
+}
+
+.imagem {
+    background: url(../images/background.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(250, 36, 143);
+    margin-top: 140px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    -webkit-text-stroke: 2px black;
+}
+
+.calculator {
+    margin: -600px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 670px;
+    border-radius: 10px;
+}
+
+.calculator-screen {
+    color: white;
+    grid-column: 1 / -1;
+    height: 60px;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    background-color: #3d3d3d;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+button {
+    font-size: 2em;
+    padding: 10px;
+    background-color: #0077ff;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+button.operator {
+    background-color: #fcf977;
+}
+
+button.ac {
+    background-color: #f44336;
+    color: #fff;
+}
+
+button.equal {
+    background-color: #4caf50;
+    color: #fff;
+}
